@@ -80,7 +80,7 @@ class TalentSignup extends React.Component{
                 "email": email,
                 "password": password,
             }
-            axios.post(`http://wren.in:3200/api/sign-up/fan`,params).then((response)=>{
+            axios.post(`http://wren.in:3200/api/sign-up/talent`,params).then((response)=>{
                 console.log(response)
                 this.setState({submitLoading:false})
                 toast.info('Signup success.')
