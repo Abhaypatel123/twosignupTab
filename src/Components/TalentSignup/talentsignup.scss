@@ -45,18 +45,14 @@
                 border: 3px solid $primaryColor;
             }
         }
-        .checkbox-input{
-            .css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root{
-                color: $primaryColor !important;
-            }
-        }
-        .css-j204z7-MuiFormControlLabel-root .MuiFormControlLabel-label{
+        
+        .checkbox-input-lable{
             color: $white;
-            span{
+            .term-condition{
                 color: $primaryColor;
             }
-            
         }
+
         .error-msg{
             text-align: left;
             margin-left: 3%;

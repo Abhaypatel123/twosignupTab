@@ -2,9 +2,8 @@ import React from "react";
 import './fansignup.scss';
 import {Button,Checkbox,FormControlLabel,CircularProgress } from '@mui/material';
 import axios from "axios";
-
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+import { toast } from 'react-toastify';
+import {checkboxStyle} from './FanSignupStyles';
 
 
 class FanSignup extends React.Component{
@@ -170,12 +169,12 @@ class FanSignup extends React.Component{
                     </div>
                     <div className="form-input-section">
                         <FormControlLabel
-                            label={<div>I agree the <span >Terms and Conditions.</span></div>}
-                            className="checkbox-input"
+                            label={<div className="checkbox-input-lable">I agree the <span className="term-condition" >Terms and Conditions.</span></div>}
                             control={
                                 <Checkbox
                                     checked={termCondition}
                                     onChange={()=>this.setState({termCondition:!termCondition})}
+                                    style ={checkboxStyle}
                                 />
                             }
                         />

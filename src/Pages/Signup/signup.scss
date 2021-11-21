@@ -30,6 +30,10 @@
             border-radius: 40px;
             // margin-top: 24px;
 
+            span{
+                display: none;
+            }
+
             .tab{
                 color: $white;
             }
@@ -37,9 +41,6 @@
                 background-color: $primaryColor;
                 border-radius: 40px;
                 color: $white;
-            }
-            .css-1aquho2-MuiTabs-indicator{
-                display: none;
             }
         }
         
