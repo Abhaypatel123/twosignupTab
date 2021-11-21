@@ -1,0 +1,47 @@
+@import '../Signup/../../Common/Variable.scss';
+
+#Signup{
+    text-align: center;
+    background: $darkBlack;
+    .signup-main{
+        
+        background: $backgroundColor;
+        width: 80%;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        display: inline-flex;
+        border-radius: 15px;
+        margin: 9px;
+        overflow: auto;
+        padding: 10px 0px 10px 0px;
+        flex-direction: column;
+        min-height: 100vh;
+
+        @media screen and (max-width: 600px) {
+            width: 100%;
+            margin: 0px;
+            border-radius: 0px;
+        }
+
+        .tabs{
+            background: $darkBlack;
+            color: $white;
+            border-radius: 40px;
+            // margin-top: 24px;
+
+            .tab{
+                color: $white;
+            }
+            .active-tab{
+                background-color: $primaryColor;
+                border-radius: 40px;
+                color: $white;
+            }
+            .css-1aquho2-MuiTabs-indicator{
+                display: none;
+            }
+        }
+        
+    }
+}

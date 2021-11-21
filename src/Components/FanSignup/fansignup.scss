@@ -1,0 +1,85 @@
+@import '../../Common/Variable.scss';
+
+
+#FanSignup{
+
+    .form-main{
+        
+        .form-header{
+            font-size: 28px;
+            font-weight: 500;
+            color: $white;
+            margin: 20px 16px;
+
+        }
+
+        .form-input-section{
+            margin: 25px 0px 0px 0px;
+
+            .form-lable{
+                margin: 2px;
+                text-align: left;
+                color: $lightWhite;
+                margin-left: 12px;
+                font-size: 15px;
+            }
+            .form-input{
+                width: 100%;
+                padding: 12px 20px;
+                margin: 8px 0;
+                box-sizing: border-box;
+                border: 3px solid $primaryColor;
+                -webkit-transition: 0.5s;
+                transition: 0.5s;
+                outline: none;
+                background: $backgroundColor;;
+                border-radius: 40px;
+                color: $lightWhite;
+            }
+            
+            .form-input::placeholder {
+                color:$lightWhite;
+              }
+            .form-input:focus{
+                border: 3px solid $primaryColor;
+            }
+        }
+        .checkbox-input{
+            .css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root{
+                color: $primaryColor !important;
+            }
+        }
+        .css-j204z7-MuiFormControlLabel-root .MuiFormControlLabel-label{
+            color: $white;
+            span{
+                color: $primaryColor;
+            }
+            
+        }
+        .error-msg{
+            text-align: left;
+            margin-left: 3%;
+            color: red;
+            font-weight: 400;
+            font-size: 15px;
+        }
+        
+        .form-input-submit{
+            background: $primaryColor;
+            color: $lightWhite;
+            border-radius: 40px;
+            width: 60%;
+        }
+
+        @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+            .form-input-section{
+                width: 92%;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                display: inline-block;
+            }
+        }
+        
+    }
+}
